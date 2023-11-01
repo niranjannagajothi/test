@@ -1,3 +1,3 @@
 #include<iostream>
 using namespace std;
-cout<<"hi"
+cout<<"hi";
