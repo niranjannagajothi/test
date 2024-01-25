@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new
+                Scanner(System.in);
+        System.out.println("Enter the Marks for Sub 1");
+        int subject1Mark = scanner.nextInt();
+        System.out.println("Enter the Mark for Sub 2");
+        int subject2Mark = scanner.nextInt();
+        System.out.println("Enter the Mark for Sub 3");
+        int subjet3Mark = scanner.nextInt();
+        System.out.println("Enter the Mark for Sub 4");
+        int subject4Mark = scanner.nextInt();
+        System.out.println("Enter the Mark for Sub 5");
+        int subject5mark = scanner.nextInt();
+        int totalMark = subject1Mark + subject2Mark + subjet3Mark + subject4Mark + subject5mark;
+        double averageMark = totalMark / 5.0;
+        char grade;
+        switch ((int) averageMark / 10) {
+            case 10:
+                grade = 'A';
+                break;
+            case 9:
+                grade = 'B';
+                break;
+            case 8:
+                grade = 'C';
+                break;
+            case 7:
+                grade = 'D';
+                break;
+            default:
+                grade = 'F';
+        }
+        System.out.println("Total Mark:" + totalMark);
+        System.out.println("Average Mark:" + averageMark);
+        System.out.println("Grade:" + grade);
+
+
+        scanner.close();
+    }
+
+    }
+
